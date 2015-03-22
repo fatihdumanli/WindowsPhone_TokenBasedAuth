@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+
+  <Identity Name="3f5cb29c-e56a-41f1-80ad-984c97f75f90"
+            Publisher="CN=Fatih"
+            Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="3f5cb29c-e56a-41f1-80ad-984c97f75f90" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>WindowsPhone_TokenBasedAuth</DisplayName>
+    <PublisherDisplayName>Fatih</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="WindowsPhone_TokenBasedAuth.App">
+        <m3:VisualElements
+            DisplayName="WindowsPhone_TokenBasedAuth"
+            Square150x150Logo="Assets\Logo.png"
+            Square44x44Logo="Assets\SmallLogo.png"
+            Description="WindowsPhone_TokenBasedAuth"
+            ForegroundText="light"
+            BackgroundColor="transparent">
+            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
+            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
+        </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+</Package>
